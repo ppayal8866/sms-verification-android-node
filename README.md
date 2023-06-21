@@ -64,7 +64,23 @@ ngrok http 3000
 
 ## Setting the server for the Android application
 
-You'll need to update the Android application with the URLs from ngrok, if you are running locally. If you've deployed this solution to a server, you can use those URLs.
+Update the Android application with the URLs from ngrok, if you are running locally. If you've deployed this solution to a server, you can use those URLs.
+
+> In the Twilio android application, go to the app/src/main/res/
+> By right click on res folder -> New -> values Resource File -> enter file name "sensitive.xml"
+
+    ```bash
+       <?xml version="1.0" encoding="utf-8"?>
+       <resources xmlns:tools="http://schemas.android.com/tools">
+    
+        <string name="server_client_secret">0000000000</string>
+        <string name="server_client_secret_v8">0000000000</string>
+        <string name="url_verify" > Enter URL Here /api/verify</string>
+        <string name="url_request"> Enter URL Here /api/request</string>
+        <string name="url_reset">   Enter URL Here /api/reset</string>
+
+      </resources>
+      ```
 
 ## License
 MIT
