@@ -69,7 +69,7 @@ Update the Android application with the URLs from ngrok, if you are running loca
 > In the Twilio android application, go to the app/src/main/res/
 > By right click on res folder -> New -> values Resource File -> enter file name "sensitive.xml"
 
-    ```bash
+```bash
        <?xml version="1.0" encoding="utf-8"?>
        <resources xmlns:tools="http://schemas.android.com/tools">
     
@@ -80,7 +80,7 @@ Update the Android application with the URLs from ngrok, if you are running loca
         <string name="url_reset">   Enter URL Here /api/reset</string>
 
       </resources>
-      ```
+```
 
 ## License
 MIT
