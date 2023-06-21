@@ -1,1 +1,1 @@
-# -sms-verification-android-node
+# sms-verification-android-node
